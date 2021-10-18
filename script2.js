@@ -1,4 +1,4 @@
-let i = 0;
+/* let i = 0;
 do {
    const a = prompt('Один из последних просмотренных фильмов?', ''),
          b = prompt('На сколько оцените его?', '');
@@ -132,9 +132,39 @@ console.log(Object.keys(options).length);
 /* delete options.name;
 console.log(options); */
 
-for (let key in options) {
+/* for (let key in options) {
    if (typeof (options[key]) == 'object') {
       for (let i )
    }
    console.log(`Свойство ${key} имеет значение ${options[key]} `);
+} */
+
+const arr = [15, 12, 73, 6, 8];
+arr.sort(compare);
+console.log(arr);
+function compare(a, b) {
+   return a - b;
 }
+
+
+
+
+/* arr.pop();
+arr.push(10);
+console.log(arr);
+
+for (let i = 0; i < arr.length; i++) {
+   console.log(arr[i]);
+} */
+/* for (let value of arr) {
+   console.log(value);
+} */
+/* arr.forEach(function (item, i, arr) {
+   console.log(`${i}: ${item} внутри массива ${arr}`);
+   
+}); */ 
+
+const str = prompt("", "");
+const products = str.split(", ");
+products.sort();
+console.log(products.join('; '));
